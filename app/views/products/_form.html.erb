@@ -1,0 +1,9 @@
+<%= simple_form_for @product do |f| %>
+  <%= f.file_field :product_image %>
+  <%= f.input :name,label: 'Product Name', error: 'Username is mandatory, please specify one' %>
+  <%= f.input :description,label: 'Description' %>
+  <%= f.input :price %>
+  <%= f.input :no_of_stock %>
+  <%= f.input :size %>
+  <%= f.button :submit %>
+<% end %>

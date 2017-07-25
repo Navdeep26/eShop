@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Eshop</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  	<%= render "layouts/header" %>
+  	<div class="container-fluid">
+    	<%= yield %>
+  	</div>
+  </body>
+    <nav class="navbar navbar-default" >    
+      <div class="container-fluid ">
+        <div style="background-color: #485769" class="row">
+          <p class="text-center text text" >Back to top</p>
+        </div>
+        <div style="background-color: #232F3E" class="row">
+          <div class="col-md-2">
+          </div>
+          <div class="col-md-2">
+            <ul><h4 class="text">Get to Know Us</h4></ul>
+            <ul><p class="text">About Us</p></ul>
+            <ul><p class="text">Careers</p></ul>
+            <ul><p class="text">Press Releases</p></ul>
+            <ul><p class="text">eShop Cares</p></ul>
+            <ul><p class="text">Gift a Smile</p></ul>
+          </div>
+
+          <div class="col-md-2">
+            <ul><h4 class="text">Connect with Us</h4></ul>
+            <ul><p class="text">Facebook</p></ul>
+            <ul><p class="text">Twitter</p></ul>
+            <ul><p class="text">Instagram</p></ul>
+          </div>
+
+          <div class="col-md-3">
+            <ul><h4 class="text">Make Money with Us</h4></ul>
+            <ul><p class="text">Sell on eShop</p></ul>
+            <ul><p class="text">Become an Affiliate</p></ul>
+            <ul><p class="text">Fulfilment by Amazon</p></ul>
+            <ul><p class="text">Advertise Your Products</p></ul>
+          </div>
+
+          <div class="col-md-3">
+            <ul><h4 class="text">Let Us Help You</h4></ul>
+            <ul><p class="text">Your Account</p></ul>
+            <ul><p class="text">Returns Centre</p></ul>
+            <ul><p class="text">100% Purchase Protection</p></ul>
+            <ul><p class="text">eShop Assistant</p></ul>
+            <ul><p class="text">Help</p></ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+</html>

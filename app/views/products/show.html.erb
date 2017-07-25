@@ -1,0 +1,20 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-5">
+			<%= image_tag @product.product_image.url(:product_show)%>
+		</div>
+		<div class="col-md-7">
+			<h1><%= @product.name%></h1>
+<blockquote>
+	<h2>$<%= @product.price%></h2>
+	<p><%= @product.description %></p>
+	<p><strong>No.of Stock <%= @product.no_of_stock%></strong></p>
+</blockquote>
+		</div>
+	</div>
+</div>
+
+<%= link_to "Edit Product", edit_product_path%>
+<%= link_to "Back", root_path%>
+<%= link_to "Delete Product", product_path(@product), method: :Delete, data: {confirm: "Are you sure?" }%>
+
